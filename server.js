@@ -23,9 +23,6 @@ Also Remove the user from local/session storage
 	After that Add a Check Passbook Button that will redirect to a route called /passbook
    	Finally Add a Calculate Tax Button That will take you to a different route called /tax
 
-
-
-
 Upload and share the github repo for this code.
 
 
@@ -57,6 +54,6 @@ app.listen(port, function (error) {
   if (error) {
     console.err(`ERROR IN STARTING THE SERVER ${error}`);
   } else {
-    console.log(`SERVER IS RUNNING ON PORT ${error}`);
+    console.log(`SERVER IS RUNNING ON PORT ${process.env.PORT}`);
   }
 });
